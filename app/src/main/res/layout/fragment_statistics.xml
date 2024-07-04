@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_background">
+
+    <!-- Total Habits Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/total_habits_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@color/card_background"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/habit_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_habit"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/total_habits_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Habits: 0"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/habit_icon"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Completed Habits Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/completed_habits_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@color/card_background"
+        android:elevation="4dp"
+        android:layout_below="@id/total_habits_card_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/completed_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/add_time_button"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/completed_habits_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed Habits: 0"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/completed_icon"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Focus Sessions Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/focus_sessions_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@color/card_background"
+        android:elevation="4dp"
+        android:layout_below="@id/completed_habits_card_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <ImageView
+                android:id="@+id/focus_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_focus" />
+
+            <TextView
+                android:id="@+id/focus_sessions_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/focus_icon"
+                android:text="Focus Sessions: 0"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

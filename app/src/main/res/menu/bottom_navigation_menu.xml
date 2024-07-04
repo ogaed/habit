@@ -1,0 +1,15 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_habits"
+        android:icon="@drawable/ic_habits"
+        android:title="Habits" />
+    <item
+        android:id="@+id/nav_timer"
+        android:icon="@drawable/add_time_button"
+        android:title="Timer" />
+    <item
+        android:id="@+id/nav_statistics"
+        android:icon="@drawable/ic_statistics"
+        android:title="Statistics" />
+</menu>
